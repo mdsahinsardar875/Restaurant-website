@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    transition: all 0.5s linear;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+body {
+    background: #200401;
+    font-family: "Lato", sans-serif;
+}
+
+header {
+    position: relative;
+    padding: 2em 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6)), url(./image/bg_image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: 600;
+    flex: 1;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 70px;
+    margin-right: 1%;
+}
+
+.navbar {
+    width: 100%;
+    padding: 2rem 3rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    top: 0;
+    position: fixed;
+}
+.navbar.scrolled{
+    background-color: #000;
+    box-shadow: rgba(0,0,0,0.35) 0 5px 15px;
+}
+
+.nav_items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+}
+
+.nav_items li {
+    list-style: none;
+    padding: 1em;
+}
+
+.nav_item li a {
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.nav_items li::before {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: orangered;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav_items li:hover::before {
+    width: 100%;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.btn {
+    padding: 9px 15px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    background-color: orangered;
+    border: 2px solid orangered;
+    transition: all 0.5s ease-out;
+}
+
+.nav_manu {
+    display: none;
+}
+
+.main {
+    width: 80%;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: #fff;
+}
+
+.heading_1 {
+    font-size: 2.3em;
+}
+
+.heading {
+    font-size: 3.5em;
+    padding: 1.5% 0;
+    font-family: "Playwrite CU", cursive;
+}
+
+.main_btn {
+    display: flex;
+}
+
+.btn1:hover {
+    background-color: transparent;
+}
+
+.btn2 {
+    background-color: transparent;
+    margin-left: 1%;
+    align-items: center;
+    display: flex;
+}
+
+.btn2 {
+    background-color: transparent;
+    margin-left: 1%;
+    align-items: center;
+    display: flex;
+}
+
+.btn2 i {
+    font-size: 2em;
+    margin-right: 6px;
+    color: orangered;
+}
+
+.btn2:hover {
+    background-color: orangered;
+}
+
+.btn2:hover i {
+    color: #fff;
+}
+
+/* --------service----- */
+.sec{
+    padding: 8% 0 3% 0;
+    width: 85%;
+    margin: auto;
+}
+.head{
+    text-align: center;
+}
+.heading span{
+    color: orangered;
+}
+.head .heading{
+    font-family: 'lato', sans-serif;
+}
+.head .heading_1{
+    font-family: 'playwrite cu', cursive;
+    color: aliceblue;
+    font-size: 1.4em;
+}
+.boxes{
+    margin: 4em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+}
+.box{
+    text-align: center;
+    padding: 5% 0;
+    box-shadow: rgba(0,0,0,1.35) 0 5px 15px;
+    border: 2px solid transparent;
+}
+.box img{
+    width: 150px;
+}
+.box p{
+    max-width: 275px;
+    margin-inline: auto;
+    text-align: center;
+    line-height: 1.75rem;
+    color: #888;
+}
+.box h4{
+    margin: 1rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+.box:hover{
+    border: 2px solid #fff;
+    cursor: pointer;
+    border-radius: 10px;
+}
